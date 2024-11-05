@@ -46,6 +46,13 @@ const loadModel = (containerId, modelPath) => {
     );
 
     window.addEventListener('resize', () => {
+        const container = document.getElementById('logo-model');
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        camera.aspect = container.clientWidth / container.clientHeight;
+        camera.updateProjectionMatrix();
+    });    
+
+    window.addEventListener('resize', () => {
         renderer.setSize(container.clientWidth, container.clientHeight);
         camera.aspect = container.clientWidth / container.clientHeight;
         camera.updateProjectionMatrix();

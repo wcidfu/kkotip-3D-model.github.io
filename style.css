@@ -113,3 +113,45 @@ footer {
     text-align: center; 
     color: white; 
 }
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .model-container, .intro-section, .content-section {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .content-block {
+        height: 300px; /* Adjust height for smaller screens */
+        font-size: 1rem; /* Smaller text */
+        padding: 0.5rem;
+    }
+
+    .intro-section h1 {
+        font-size: 2rem;
+    }
+
+    .intro-section p, .footer-content p {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-block {
+        height: 250px; /* Further reduce height */
+    }
+
+    .intro-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-section p, .footer-content p {
+        font-size: 0.9rem;
+    }
+}
