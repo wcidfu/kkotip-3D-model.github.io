@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.br {
+    font-size: 10px;
+}
+
+.model-container {
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+model-viewer {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 2rem 0;
+    background-color: #f0f0f0;
+}
+
+.content-block {
+    width: 100%;
+    height: 400px; 
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+.content-block model-viewer {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.intro-section {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.text-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    height: 100px; 
+    background-color: black; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    position: relative; 
+    padding: 10px; 
+}
+
+.footer-content {
+    text-align: center; 
+    color: white; 
+}
