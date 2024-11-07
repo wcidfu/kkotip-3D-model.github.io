@@ -59,4 +59,5 @@ const loadModel = (containerId, modelPath) => {
     });
 };
 
-loadModel("logo-model", "./Models/logo_result.glb");
+loadModel("logo-model", "/kkotip-3D-model.github.io/Models/logo_result.glb");
+
