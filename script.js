@@ -59,4 +59,4 @@ const loadModel = (containerId, modelPath) => {
     });
 };
 
-loadModel("logo-model", "/Models/logo_result.glb");
+loadModel("logo-model", "./Models/logo_result.glb");
